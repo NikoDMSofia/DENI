@@ -47,6 +47,10 @@ a {
         padding:  0px 50px 80px 50px; 
         border-bottom: 1px solid rgba(255, 0, 0, 0.425);       
     }
+
+    #vi_de_o {
+      margin-top: -10ch;
+    }
    
    .face_image {
     margin-top: -20px;
