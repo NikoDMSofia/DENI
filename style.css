@@ -240,6 +240,7 @@ a {
     }
 
      .social {
+      margin-top: 20p;
         display: flex;
         justify-content: center;
         gap: 50px;
