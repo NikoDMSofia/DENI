@@ -38,19 +38,19 @@ a {
     background-color: rgb(0, 0, 0);
    }
   }
-   .toop {
+   /* .toop {
     width: 100%;
     height: 40px;
-    background-color: #fffefe9a;
+    
     position: absolute; 
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(25px);
-    /* animation: movies 1s ease-out forwards 10.5s; */
-
-        /* opacity: 0; */
+    transform: translateY(20px);
+    background-color: #fffefe9a;
+    animation: movies 1s ease-out forwards infinite ;
     
+   
     
       h1 {
         text-align: center;
@@ -65,7 +65,7 @@ a {
      
     }
    
-  }
+  } */
 
   /* @keyframes movies {
   0% {
@@ -75,7 +75,6 @@ a {
     
   
   100% {
-    transform: translateY(25px);
     opacity: 1;
   }
 } */
@@ -90,7 +89,7 @@ a {
     } */
 
     #vi_de_o {
-      margin-top: -35px;
+      margin-top: -10ch;
      position: relative;
      z-index: -1;
     }
@@ -98,7 +97,7 @@ a {
    
 
    .face_image {
-    /* margin-top: -10px; */
+    margin-top: -10px;
     display: flex;
     justify-content: center;
       img {
@@ -194,7 +193,7 @@ a {
      
 .trener_name {
     text-align: center;
-    /* margin-top: -35px; */
+    margin-top: -35px;
     font-family: "Oswald", sans-serif;    
     font-size: 1.5rem;
     color: rgb(223, 214, 214);
