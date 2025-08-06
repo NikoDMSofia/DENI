@@ -104,6 +104,7 @@ a {
       margin-top: -15ch;
      position: relative;
      z-index: -1;
+     /* opacity: .5; */
     }
 
    
