@@ -147,6 +147,7 @@ a {
 }
     .buttons {
         margin-top: 50px;
+        
     }
 
      .monday,.tuesday,.wednesday, .thursday, .friday, .saturday, .sunday {
@@ -170,8 +171,20 @@ a {
      .sunday {
         margin-bottom: 50px;
      }
-
-     
+#puls_btn {
+animation: pulse 2s infinite;
+}
+  @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}   
 .trener_name {
     text-align: center;
     font-family: "Oswald", sans-serif;    
