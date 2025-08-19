@@ -11,13 +11,9 @@
 img {
     width: 100%;
 }
-
-
 .first_page_container .head {
     padding: 12em 0 0 0;
 }
-
-
 .first_page_container .head {
     height: 60vh;
     display: flex;
@@ -31,7 +27,6 @@ img {
     line-height: 1;
     width: 60%;
 }
-
 .first_page_container  p {
     margin-top: 1em;
     display: flex;
@@ -41,13 +36,9 @@ img {
     text-align: center;
     font-size: 1.2em;
     color: rgba(0, 0, 0, 0.671);
-
-
 }
-
-
 .first_page_container a  {
-    margin-top: 3em;
+    margin-top: 7em;
     text-decoration: none;
     font-size: 1em;
     background-color: rgba(99, 101, 241, 0.877);
@@ -57,7 +48,6 @@ img {
     /* max-width: 20em; */
     text-align: center;
 }
-
 
 /* second section */
 
@@ -154,6 +144,10 @@ img {
 }    
 
 @media (max-width: 1070px) {
+    .first_page_container .head {
+        height: 60vh;
+        margin-bottom: 7em;
+    }
     .first_page_container  h1 {
         text-align: center;
         font-size: 4em;
@@ -176,6 +170,7 @@ img {
 }
 
 @media (max-width: 770px) {
+    
     .first_page_container  h1 {
         font-size: 3em;
     }
@@ -257,5 +252,6 @@ img {
     .first_page_SECOND__section .content {
         margin-top: 10em;
     }
+    
     
 }
