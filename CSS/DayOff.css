@@ -96,7 +96,9 @@
         display: inline-block;
         .stretch {
             margin: 1em;
-            background-color: aqua;
+            background-color: rgb(31, 179, 190);
+            color: whitesmoke;
+            border-radius: 3px;
             display: inline-block;
             padding: .3em .5em;
             text-transform: uppercase;
