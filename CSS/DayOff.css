@@ -124,7 +124,7 @@
 }
 
 img {
-    width: 120px;
+    width: 100px;
 }
 .damian-pro {
     padding: 2em;
@@ -135,6 +135,7 @@ img {
 
 .damiqn {
     text-align: right;
+    font-size: .8em;
 }
 
 
