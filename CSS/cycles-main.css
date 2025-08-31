@@ -67,13 +67,14 @@ body {
     background-size: contain;
     background-position: bottom;
     border-bottom: 1px solid black;
-    z-index: -999;
 }
 
 .top, .middle, .bottom {
     background-color: rgba(235, 235, 235, 0.552);
     margin-bottom: 10em;
     padding: 5em 11% 5em 11%;
+    border-bottom: .5px solid black;
+    
 }
 
 
