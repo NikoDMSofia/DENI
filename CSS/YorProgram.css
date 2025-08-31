@@ -15,6 +15,7 @@ img {
 
 .training_container{
     background-color: rgb(215, 225, 250);
+    padding: 3em 0 0 0;
 }
 .training_container .content {
     height: 15vh;
@@ -24,7 +25,7 @@ img {
     text-align: center;
 }
 .training_container .head_title h1 {
-    font-weight: 400;
+    font-weight: 300;
 }
 .training_container span {
     color: rgb(183, 100, 183);
