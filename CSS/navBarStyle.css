@@ -3,12 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
+    font-family: sans-serif;
 }
 
 nav {
-    background-color: white;
-    box-shadow: 3px 3px 5px rgb(201, 199, 199);
+    background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
     text-align: center;
@@ -32,14 +31,15 @@ nav li:first-child {
     margin-right: auto;
 }
 
-nav li:nth-child(8){
+nav li:nth-child(4){
     margin-left: auto;
 }
 nav a {
     height: 100%;
     padding: 0 30px;
+    font-size: .8em;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .logoNAMEcontainer {
@@ -49,13 +49,13 @@ nav a {
     display: flex;
     }
     .logoName .ddd {
-        color: rgb(156, 30, 156);
+        color: #e32123;
         font-family: "Goldman", sans-serif;
         font-size: 1.8em;
         letter-spacing:  -2px;
     }
     .logoName .ttt, .secondPpart {
-        color: rgb(36, 36, 184);
+        color: rgb(148, 148, 150);
         font-family: "Goldman", sans-serif;
         font-size: 1.8em;
     }
@@ -68,7 +68,6 @@ nav img {
 }
 
 nav #bookAconsultationBG {
-    background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1));
     border-radius: 2em;
     font-size: .9em;
     padding: .6em 1.5em;
@@ -86,6 +85,7 @@ nav #bookAconsultationBG:hover {
 
 
 .sidebar {
+    padding-top: 2em;
     position: fixed;
     top: 0;
     right: 0;
@@ -100,6 +100,7 @@ nav #bookAconsultationBG:hover {
     align-items: flex-start;
     justify-content: flex-start;
 }
+
 
 
 .sidebar li {
@@ -117,7 +118,9 @@ nav #bookAconsultationBG:hover {
 
 .manu_button {
     display: none;
+    width: 35px;
 }
+
 
 
 

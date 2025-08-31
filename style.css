@@ -31,6 +31,7 @@ img {
 .first_page_container  p {
     margin-top: 1em;
     display: flex;
+    line-height: 1.5;
     justify-content: center;
     align-items: center;
     max-width: 40em;
@@ -73,12 +74,7 @@ img {
     max-width: 7em;
     font-weight: 500;
 }
-/* .first_page_SECOND__section p {
-    margin-top: 1em;
-    font-size: 1.5em;
-    max-width: 27em;
-    font-size: 1.2em;
-} */
+
 
 /*---------------- Third section ----------------*/
 .first_page_Third_section {
@@ -94,7 +90,7 @@ img {
     
 } 
 .first_page_Third_section .content, .text {
-    width: 30%;
+    width: 25em;
 }
 .first_page_Third_section img {
     border-radius: 2em;
@@ -109,6 +105,10 @@ img {
 
 .first_page_Third_section span {
     font-weight: 600;
+}
+
+.first_page_Third_section  p {
+    line-height: 1.5;
 }
 
 #reverse {
