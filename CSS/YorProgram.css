@@ -21,6 +21,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: end;
+    text-align: center;
 }
 .training_container .head_title h1 {
     font-weight: 400;
