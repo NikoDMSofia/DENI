@@ -48,22 +48,14 @@ body {
     background-position: bottom;
     border-bottom: 1px solid black;
 }
-.main-exercises{
-    height: 100px;
-    background-image: url(../images/main-ex.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    border-bottom: 1px solid black;
-}
+
 .main-exercises-phone-img{
-    height: 100px;
+    height: 150px;
     background-image: url(../images/main-ex-2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     border-bottom: 1px solid black;
-    display: none;
 }
 .stretching{
     height: 100px;
@@ -98,19 +90,20 @@ body {
     background-size: cover;
     background-color: rgb(0, 0, 0);
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: end;
-    padding: 0 1em 2em 1em;
     color: white;
 }
 .photo h1 {
-    font-size: 1em;
-    text-align: RIGHT;
-    font-family: "Bruno Ace", sans-serif;
-    font-weight: 100;
-    width: 23em;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 300;
     letter-spacing: 1px;
+    max-width: 21em;
     color: #ffffff ;
+    -webkit-backdrop-filter: blur(2px);
+     backdrop-filter: blur(2px);
+     padding-bottom: .5em;
 }
 .border-space {
     background-color: black;
@@ -233,11 +226,15 @@ input[type=submit]:hover {
         padding: 5em 2% 10em 2%;
     }
 }
-@media (max-width: 792px) {
-    .main-exercises{
-        display: none;
+@media (max-width: 1100px) {
+    .photo h1 {
+        font-size: 2em;
     }
-    .main-exercises-phone-img {
-        display: block;
+}
+
+@media (max-width: 750px) {
+    .photo h1 {
+        max-width: 90%;
+        font-size: 1.5em;
     }
 }
