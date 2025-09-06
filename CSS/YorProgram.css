@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
 }
 
 
@@ -47,7 +46,7 @@ img {
     align-items: center;
 }
 .training_container .data{
-    border: .01px solid rgb(217, 205, 205);
+    border: .01px solid rgb(225, 225, 225);
 }
 
 .training_container .data:first-child{
@@ -123,6 +122,19 @@ img {
     .training_container .head_title h1 {
      font-size: 1.5em;
     }
+}
+
+.hoverBG {
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+    cursor: pointer;
+}
+.hoverBG:hover {
+    position: relative;
+    background-color: rgb(225, 225, 225);
+    color: rgb(183, 100, 183);
+    border: none;
+    z-index: 999;
 }
 
 
