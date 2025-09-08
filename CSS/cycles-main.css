@@ -23,7 +23,7 @@ body {
     background-color: rgb(255, 255, 255);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
-    background-color: blac;
+    background-color: rgb(247, 251, 251);
 }
 
 .warm-up-text-img {
@@ -52,7 +52,7 @@ body {
 
 .main-exercises-phone-img{
     height: 150px;
-    background-image: url(../images/main-ex-2.png);
+    background-image: url(../images/main-ex-2png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
