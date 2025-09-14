@@ -256,6 +256,9 @@ input[type=submit]:hover {
         margin-bottom: 10em;
         padding: 5em 2% 10em 2%;
     }
+    .photo {
+        font-size: 1.5em;
+    }
     
 }
 
@@ -267,13 +270,10 @@ input[type=submit]:hover {
     }
 }
 
-@media (max-width: 800px) {
-    .top, .middle, .bottom {
-        /* background-color: rgba(235, 235, 235, 0.552); */
-        margin-bottom: 10em;
-        padding: 5em 2% 10em 2%;
-    }
-    
+@media (max-width: 600px) {
+    .photo {
+        font-size: 1em;
+    }   
 }
 
 
