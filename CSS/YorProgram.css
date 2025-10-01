@@ -11,6 +11,49 @@
 img {
     width: 1.5em;
 }
+#follow-up {
+    background-color: rgb(167, 53, 53);
+    font-size: 1.1em;
+    background-image: conic-gradient(#381D6A 80%, #381D6A 100%);
+}
+/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
+
+/* Cursor */
+.cursor{
+    position: relative;
+    width: 20em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
 
 .training_container{
     background-color: rgb(215, 225, 250);
