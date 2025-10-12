@@ -194,6 +194,8 @@ body {
     text-align: center;
     height: 320px;
     position: relative;
+    border-bottom-right-radius: 5em;
+    border-bottom-left-radius: 1em;
 }
 .main-middle-container::before {
   content: '';
