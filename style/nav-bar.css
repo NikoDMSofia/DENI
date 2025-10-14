@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*  font-family: "Roboto Condensed", sans-serif;
     font-family: "Montserrat", sans-serif;
@@ -15,8 +15,8 @@
 
 :root {
   --x-width: calc(var(--hamburger-hight) * 1.41421356237);
-  --bar-width: 60px;
-  --bar-hight: 8px;
+  --bar-width: 40px;
+  --bar-hight: 4px;
   --hamburger-gap: 6px;
   --foreground: #333;
   --background: white;
@@ -34,7 +34,6 @@ img {
   flex-direction: column;
   gap: var(--hamburger-gap);
   width: max-content;
-  
 
   position: absolute;
   top: var(--hamburger-margin);
@@ -44,7 +43,7 @@ img {
 }
 
 .hamburger-menu:has(input:checked) {
-  --foreground: #A9242B;
+  --foreground: #a9242b;
   --background: #333;
 }
 
@@ -122,9 +121,6 @@ a {
   font-family: sans-serif;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
-
-
-  
 }
 
 @media (min-width: 800px) {
@@ -132,6 +128,5 @@ a {
     max-width: 50dvw;
     min-height: 100dvh;
   }
+  
 }
-
-
