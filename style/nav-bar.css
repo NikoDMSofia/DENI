@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: #00030B;
+  background-color: hsl(222, 100%, 2%);
 }
 
 img {
@@ -85,6 +85,7 @@ input:checked {
   width: 0;
 }
 
+/* border-image: fill 1 linear-gradient(45deg, hsla(357, 65%, 40%, .5), hsla(0, 0%, 0%, 0.5)); */
 .sidebar {
   transition: translate var(--animation-timing);
   translate: -100%;
@@ -93,7 +94,7 @@ input:checked {
   background-color: var(--foreground);
   background-image: url(../images/download.jpg);
   background-size: 220%;
-  border-image: fill 1 linear-gradient(hsl(357, 65%, 40%, .5));
+  border-image: fill 1 linear-gradient(90deg, hsla(357, 65%, 40%, .5), hsl(222, 100%, 2%));
   background-position: center;
   background-repeat: no-repeat;
   
