@@ -112,7 +112,7 @@ input:checked {
 
   color: var(--background);
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -134,6 +134,11 @@ a {
   width: 100px;
   margin: 20px 10px;
   position: fixed;
+}
+nav {
+  overflow: auto;
+  padding: 100px 0;
+  
 }
 
 .sidebar a {
