@@ -88,7 +88,7 @@ input:checked {
 .sidebar {
   transition: translate var(--animation-timing);
   translate: -100%;
-  padding: 0.5rem 1rem;
+  padding: var(--hamburger-margin) ;
   padding-top: calc(var(--hamburger-hight) + var(--hamburger-margin) + 1rem);
   background-color: var(--foreground);
   background-image: url(../images/download.jpg);
@@ -100,10 +100,8 @@ input:checked {
   color: var(--background);
   max-width: 100dvw;
   min-height: 100dvh;
-  text-align: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -120,6 +118,7 @@ a {
 
 .sidebar img {
   width: 150px;
+  opacity: 0;
 }
 .sidebar li {
   margin-top: 1em;
@@ -134,7 +133,7 @@ a {
 
 @media (min-width: 800px) {
   .sidebar {
-    max-width: 50dvw;
+    max-width: 45dvw;
     min-height: 100dvh;
   }
   
