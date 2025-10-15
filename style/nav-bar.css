@@ -124,17 +124,41 @@ a {
 }
 
 .sidebar a {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-family: "Alumni Sans", sans-serif;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   .sidebar {
-    max-width: 45dvw;
+    max-width: 80dvw;
     min-height: 100dvh;
+    a {
+      font-size: 2.7rem;
+    }
+    
+  }
+  
+}
+@media (min-width: 640px) {
+  .sidebar {
+    max-width: 420px;
+    min-height: 100dvh;
+    a {
+      font-size: 3rem;
+    }
+    
+  }
+  
+}
+@media (min-width: 920px) {
+  .sidebar {
+    max-width: 420px;
+    min-height: 100dvh;
+    
+    
   }
   
 }
