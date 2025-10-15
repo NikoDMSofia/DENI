@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*  font-family: "Roboto Condensed", sans-serif;
     font-family: "Montserrat", sans-serif;
@@ -28,6 +28,7 @@
 
 body {
   background-color: hsl(222, 100%, 2%);
+  overflow-x: hidden;
 }
 
 img {
@@ -42,7 +43,7 @@ img {
 
   position: absolute;
   top: var(--hamburger-margin);
-  left: var(--hamburger-margin);
+  right: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
 }
@@ -89,22 +90,26 @@ input:checked {
 /* border-image: fill 1 linear-gradient(45deg, hsla(357, 65%, 40%, .5), hsla(0, 0%, 0%, 0.5)); */
 .sidebar {
   transition: translate var(--animation-timing);
-  translate: -100%;
-  padding: var(--hamburger-margin) ;
+  translate: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: var(--hamburger-margin);
   padding-top: calc(var(--hamburger-hight) + var(--hamburger-margin) + 1rem);
-  background-color: var(--foreground);
   background-image: url(../images/download.jpg);
   background-size: 220%;
-  border-image: fill 1 linear-gradient(90deg, hsla(357, 65%, 40%, .5), hsl(222, 100%, 2%));
+  border-image: fill 1
+    linear-gradient(-90deg, hsla(357, 65%, 40%, 0.5), hsl(222, 100%, 2%));
   background-position: center;
   background-repeat: no-repeat;
-  
+
   color: var(--background);
-  max-width: 100dvw;
-  min-height: 100dvh;
+  width: 100dvw;
+  height: 100dvh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  text-align: right;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
@@ -133,32 +138,28 @@ a {
 
 @media (min-width: 500px) {
   .sidebar {
-    max-width: 80dvw;
+    width: 80dvw;
     min-height: 100dvh;
+    padding: calc(var(--hamburger-margin) * 2);
     a {
       font-size: 2.7rem;
     }
-    
   }
   
 }
 @media (min-width: 640px) {
   .sidebar {
-    max-width: 420px;
+    width: 420px;
     min-height: 100dvh;
     a {
       font-size: 3rem;
     }
-    
   }
-  
 }
 @media (min-width: 920px) {
   .sidebar {
-    max-width: 420px;
+    width: 420px;
     min-height: 100dvh;
-    
-    
   }
   
 }
