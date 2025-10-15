@@ -21,13 +21,14 @@
   --hamburger-gap: 6px;
   --foreground: hsl(225, 100%, 51%);
   --background: white;
-  --hamburger-margin: 30px;
+  --hamburger-margin:  30px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-hight: calc(var(--bar-hight) * 3 + var(--hamburger-gap) * 2);
 }
 
 body {
   background-color: hsl(222, 100%, 2%);
+  max-width: 100dvw;
   overflow-x: hidden;
 }
 
@@ -41,7 +42,7 @@ img {
   gap: var(--hamburger-gap);
   width: max-content;
 
-  position: absolute;
+  position: fixed;
   top: var(--hamburger-margin);
   right: var(--hamburger-margin);
   z-index: 2;
@@ -70,11 +71,16 @@ img {
   rotate: 45deg;
   width: var(--x-width);
   translate: 0 calc(var(--bar-hight) / -2);
+  opacity: 1;
 }
 .hamburger-menu:has(input:checked)::after {
   rotate: -45deg;
   width: var(--x-width);
   translate: 0 calc(var(--bar-hight) / 2);
+}
+
+.hamburger-menu::before {
+  opacity: 0;
 }
 
 input {
@@ -89,11 +95,11 @@ input:checked {
 
 /* border-image: fill 1 linear-gradient(45deg, hsla(357, 65%, 40%, .5), hsla(0, 0%, 0%, 0.5)); */
 .sidebar {
+  position: fixed ;
+  top: 0;
+  right: 0;
   transition: translate var(--animation-timing);
   translate: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
   padding: var(--hamburger-margin);
   padding-top: calc(var(--hamburger-hight) + var(--hamburger-margin) + 1rem);
   background-image: url(../images/download.jpg);
@@ -102,14 +108,14 @@ input:checked {
     linear-gradient(-90deg, hsla(357, 65%, 40%, 0.5), hsl(222, 100%, 2%));
   background-position: center;
   background-repeat: no-repeat;
+  text-align: right;
 
   color: var(--background);
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  text-align: right;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
@@ -123,9 +129,11 @@ a {
   list-style-type: none;
 }
 
-.sidebar img {
-  width: 150px;
-  opacity: 0;
+
+.logo {
+  width: 100px;
+  margin: 20px 10px;
+  position: fixed;
 }
 
 .sidebar a {
@@ -136,21 +144,21 @@ a {
   font-family: "Alumni Sans", sans-serif;
 }
 
+
+
 @media (min-width: 500px) {
   .sidebar {
-    width: 80dvw;
+    width: 420px;
     min-height: 100dvh;
-    padding: calc(var(--hamburger-margin) * 2);
     a {
       font-size: 2.7rem;
     }
   }
-  
 }
 @media (min-width: 640px) {
   .sidebar {
     width: 420px;
-    min-height: 100dvh;
+    min-height: 100vh;
     a {
       font-size: 3rem;
     }
@@ -159,7 +167,18 @@ a {
 @media (min-width: 920px) {
   .sidebar {
     width: 420px;
-    min-height: 100dvh;
+    min-height: 100vh;
+    padding: 200px 80px;
   }
-  
+  .hamburger-menu {
+    position: fixed;
+    top: 100px;
+    right: 70px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .logo {
+    width: 150px;
+    margin: 80px 40px;
+  }
 }
