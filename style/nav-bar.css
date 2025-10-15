@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*  font-family: "Roboto Condensed", sans-serif;
     font-family: "Montserrat", sans-serif;
     font-family: "Alex Brush", cursive;
     font-family: "Oswald", sans-serif;
+    font-family: "Alumni Sans", sans-serif;
 */
 *,
 *::before,
@@ -121,15 +122,13 @@ a {
   width: 150px;
   opacity: 0;
 }
-.sidebar li {
-  margin-top: 1em;
-}
+
 .sidebar a {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
-  font-family: sans-serif;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  font-family: "Alumni Sans", sans-serif;
 }
 
 @media (min-width: 800px) {
