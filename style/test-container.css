@@ -1,0 +1,155 @@
+.prices-boxes-container {
+  padding: 30px;
+  .price-box-one,
+  .price-box-four,
+  .price-box-three,
+  .price-box-two {
+    border: 1px solid #a9242b;
+    min-height: 200px;
+    margin-bottom: 2rem;
+    min-width: 200px;
+    gap: 2rem;
+  }
+  .price-box-one,
+  .price-box-two,
+  .price-box-three,
+  .price-box-four {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    p {
+      font-size: 1.1rem;
+      letter-spacing: 1.5px;
+      number {
+        color: white;
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+    }
+    span {
+      color: #a9242b;
+      font-size: 2.5rem;
+      font-weight: 600;
+      indiv- {
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.nuber-one-trainer {
+  margin-bottom: 5rem;
+  background-image: url(../images/Number1-bg.png);
+  background-repeat: no-repeat;
+  background-position: top bottom;
+  height: 60vh;
+  color: white;
+  position: relative;
+  min-width: 300px;
+  h1 {
+    position: absolute;
+    bottom: 110px;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 0.8;
+    span {
+      color: #a9242b;
+    }
+  }
+  p {
+    padding-top: 10rem;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    bottom: -30px;
+    max-width: 21rem;
+    line-height: 1.35;
+  }
+}
+
+.test-container {
+  padding: 10rem 30px 60px 30px;
+}
+
+@media (min-width: 600px) {
+  .nuber-one-trainer {
+    margin-bottom: 0rem;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .test-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .prices-boxes-container {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1000px) {
+  .prices-boxes-container {
+    justify-content: center;
+  }
+  .price-box-one,
+  .price-box-four,
+  .price-box-three,
+  .price-box-two {
+    height: 250px;
+    margin-bottom: 2rem;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1167px) {
+  .test-container {
+    justify-content: space-around;
+  }
+  .prices-boxes-container {
+    justify-content: center;
+  }
+  .price-box-one,
+  .price-box-four,
+  .price-box-three,
+  .price-box-two {
+    height: 270px;
+    margin-bottom: 2rem;
+    width: 270px;
+  }
+}
+
+@media (min-width: 1226px) {
+  .nuber-one-trainer {
+    min-width: 40%;
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      max-width: 100%;
+    }
+  }
+  .prices-boxes-container {
+    width: 50rem;
+  }
+  .price-box-one,
+  .price-box-four,
+  .price-box-three,
+  .price-box-two {
+    height: 300px;
+    margin-bottom: 2rem;
+    width: 300px;
+  }
+}
